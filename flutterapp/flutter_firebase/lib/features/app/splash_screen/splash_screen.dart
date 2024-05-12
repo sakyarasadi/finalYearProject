@@ -30,7 +30,7 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(''), // Add your image here
+            Image.asset('assets/stat.png'), // Add your image here
             SizedBox(height: 20), // Adjust spacing as needed
             Text(
               "MediMate",
