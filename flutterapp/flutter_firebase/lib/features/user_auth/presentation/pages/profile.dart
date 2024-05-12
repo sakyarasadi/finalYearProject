@@ -8,13 +8,19 @@ class ProfileScreen extends StatelessWidget {
       appBar: AppBar(title: Text('Profile')),
       body: StreamBuilder<DocumentSnapshot>(
         stream: FirebaseFirestore.instance
-            .collection('users')
-            .doc('user_id') // Replace 'user_id' with actual user ID
+            .collection('User')
+            .doc('IvKqAHZeESaLMawK9Mz4s2waV7w2') // Replace 'user_id' with actual user ID
             .snapshots(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return Center(
               child: CircularProgressIndicator(),
+            );
+          }
+
+          if (snapshot.hasError) {
+            return Center(
+              child: Text('Error: ${snapshot.error}'),
             );
           }
 
@@ -57,3 +63,4 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 }
+
