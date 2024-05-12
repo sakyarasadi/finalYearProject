@@ -37,8 +37,8 @@ class _LoginPageState extends State<LoginPage> {
             decoration: const BoxDecoration(
               gradient: LinearGradient(
                 colors: [
-                  Color(0xffB81736),
-                  Color(0xff281537),
+                  Color.fromARGB(255, 42, 23, 184),
+                  Color.fromARGB(255, 242, 240, 243),
                 ],
               ),
             ),
@@ -95,8 +95,8 @@ class _LoginPageState extends State<LoginPage> {
                           borderRadius: BorderRadius.circular(30),
                           gradient: LinearGradient(
                             colors: [
-                              Color(0xffB81736),
-                              Color(0xff281537),
+                              Color.fromARGB(255, 42, 23, 184),
+                              Color.fromARGB(255, 242, 240, 243),
                             ],
                           ),
                         ),
