@@ -1,16 +1,17 @@
-# flutter_firebase
+Medical History Maintainer Using Prescription Detection - Medimate
 
-A new Flutter project.
+PUSL3190 Computing Individual Project 
 
-## Getting Started
+Mobile App for detect prescriptions and maintain the that records 
 
-This project is a starting point for a Flutter application.
+This is the mobile application that enable users to detect their prescriptions , store that details and added features by uploading prescription. The system provide a user - friendly interfaces for users with more comfortably. Since the system is automatic users can handle it easily . 
 
-A few resources to get you started if this is your first Flutter project:
+Install Dependencies and run the project.
+For frontend - cd flutter_firebase flutter run 
+For Flask - cd model python prescription.py
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Technologies Used : 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Frontend : flutter - dart 
+Backend : flask 
+Database : Firebase 
