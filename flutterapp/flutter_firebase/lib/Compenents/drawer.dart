@@ -4,6 +4,8 @@ import 'package:flutter_firebase/features/user_auth/presentation/pages/login_pag
 import 'package:flutter_firebase/features/user_auth/presentation/pages/profile.dart';
 import 'package:flutter_firebase/features/user_auth/presentation/pages/detect_medicine.dart';
 import 'package:flutter_firebase/features/user_auth/presentation/pages/history.dart';
+import 'package:flutter_firebase/features/user_auth/presentation/pages/sideEffects.dart';
+import 'package:flutter_firebase/features/user_auth/presentation/pages/addMoreInfo.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({Key? key}) : super(key: key);
@@ -26,6 +28,7 @@ class MyDrawer extends StatelessWidget {
             ),
           ),
 
+          SizedBox(height: 20),
           // Home List Title
            ListTile(
               title: Text('Home'),
@@ -70,6 +73,18 @@ class MyDrawer extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => HistoryScreen()),
+                );
+              },
+            ),
+
+             // History
+            ListTile(
+              title: Text('Side Effects'),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => AddMoreInfoPage()),
                 );
               },
             ),

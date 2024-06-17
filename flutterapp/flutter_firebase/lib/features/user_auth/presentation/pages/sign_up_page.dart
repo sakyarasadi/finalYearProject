@@ -282,9 +282,13 @@ class _SignUpPageState extends State<SignUpPage> {
         'fullname': fullname,
       });
 
-       Navigator.pushReplacementNamed(context, "/home");
+       Navigator.pushReplacementNamed(context, "/login");
+       
     } else {
       showToast(message: "Some error happened");
     }
   }
 }
+
+
+

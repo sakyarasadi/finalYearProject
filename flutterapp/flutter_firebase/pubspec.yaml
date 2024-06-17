@@ -62,5 +62,7 @@ flutter:
 
   assets:
     - assets/ 
+    - assets/prescriptionCard.jpg
+    - assets/prescriptionCard1.jpg
 
  
